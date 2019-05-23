@@ -1,0 +1,9 @@
+/home/ec2-user/anaconda3/bin/conda create --yes -n mytestrenv python=3.6 anaconda
+
+source activate mytestrenv
+conda install --yes --channel r r-essentials=3.5.1
+conda install -y -c r r-irkernel
+source deactivate
+
+/*python -m ipykernel install --user --name mytestrenv --display-name "Python (mytestrenv)"
+conda install -y -c r r-irkernel
